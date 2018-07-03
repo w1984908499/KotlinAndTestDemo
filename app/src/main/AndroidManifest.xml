@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="demo.myssybc.com.demo0508application">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 指纹识别 -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+
+    <application
+        android:name=".MyAppliction"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Demo0508.Demo01Activity"
+            android:theme="@style/MyAppTheme">
+            <intent-filter>
+                <action android:name="demo.myssybc.com.demo0508application.DEMO2ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Demo0508.Demo02Activity" />
+        <activity android:name=".Demo0508.ListViewActivity" />
+        <activity android:name=".Demo0508.GuideActivity" />
+        <activity android:name=".Demo0508.Guide2Activity" />
+        <activity android:name=".Demo0508.activity.PhotoViewActivity" />
+        <activity android:name=".mvpdemo.MVPDemoActivity" />
+        <activity android:name=".Demo0508.mvpdemo02.MvpDemo02Activity" />
+        <activity android:name=".mvpdemo0517.MVPDemo0517Activity" />
+        <activity android:name=".Demo0508.activity.ConstraintActivity" />
+        <activity android:name=".Demo0619.FingerprintDemoActivity" />
+        <activity android:name=".Demo0619.FingerPrintDemo2Activity" />
+        <activity android:name=".Demo0619.KotlinFingerPrintTestActivity"></activity>
+    </application>
+
+</manifest>

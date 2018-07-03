@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_save_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存列表" />
+
+    <Button
+        android:id="@+id/btn_load_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_save_list"
+        android:text="载入列表" />
+
+    <ImageView
+        android:id="@+id/img_frag_two_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/two" />
+
+    <CheckBox
+        android:id="@+id/cb_frag_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="按键Two"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listview_frag_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_save_list" />
+</RelativeLayout>

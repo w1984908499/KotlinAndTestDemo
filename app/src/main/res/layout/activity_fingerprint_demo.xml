@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Demo0619.FingerprintDemoActivity">
+
+
+    <TextView
+        android:id="@+id/tv_isHardWareUse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="设备硬件可用：true" />
+
+    <TextView
+        android:id="@+id/tv_isFingerPrintRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_isHardWareUse"
+        app:layout_constraintTop_toBottomOf="@+id/tv_isHardWareUse"
+        tools:text="设备已录入指纹：true" />
+
+    <TextView
+        android:id="@+id/tv_isFingerPrintUse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_isFingerPrintRecord"
+        app:layout_constraintTop_toBottomOf="@+id/tv_isFingerPrintRecord"
+        tools:text="指纹功能可用：true" />
+
+
+    <TextView
+        android:id="@+id/tv_isFingerPrintSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_isFingerPrintUse"
+        app:layout_constraintTop_toBottomOf="@+id/tv_isFingerPrintUse"
+        tools:text="指纹验证成功：true" />
+
+
+    <Button
+        android:id="@+id/btn_fingerprint_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="指紋驗證"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Demo0508.activity.ConstraintActivity">
+
+
+    <ImageView
+        android:id="@+id/img_constraint_logo"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_constraint_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintCircle="@+id/img_constraint_logo"
+        app:layout_constraintCircleAngle="45"
+        app:layout_constraintCircleRadius="100dp"
+        tools:text="tv_constraint_01" />
+
+    <TextView
+        android:id="@+id/tv_constraint_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/img_constraint_logo"
+        app:layout_constraintLeft_toRightOf="@+id/img_constraint_logo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_constraint_logo"
+        tools:text="tv_constraint_02222222222222222222222222222222222222222222222222222222222222222222222" />
+
+
+    <Button
+        android:id="@+id/btn_constraint_01"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="aaa"
+        android:visibility="visible"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_constraint_02"
+        app:layout_constraintWidth_percent="0.5" />
+
+
+    <Button
+        android:id="@+id/btn_constraint_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bbbbbb3"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintLeft_toRightOf="@+id/btn_constraint_01"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_goneMarginLeft="64dp" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_line_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="@+id/guide_line_01"
+        app:layout_constraintDimensionRatio="h,16:9"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+
+
+</android.support.constraint.ConstraintLayout>
